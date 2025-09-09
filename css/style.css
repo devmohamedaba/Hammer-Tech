@@ -77,6 +77,17 @@ body {
     mix-blend-mode: multiply;
 }
 
+.main-vision #typing {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    height: 50px;
+    display: flex;
+    width: auto;
+
+}
+
 .main-vision h1 {
     font-size: 60px;
     color: black;
@@ -144,4 +155,290 @@ body {
 .our-services button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+#typing {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #333;
+    }
+}
+
+.tech-stack {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tech-stack h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.tech-stack p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.stack-grid div {
+    background-color: #24272e;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.stack-grid div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #2d59eb;
+}
+
+.testimonials {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.testimonial-box {
+    background-color: #24272e;
+    color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #2d59eb;
+}
+
+.testimonial-box span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a0aec0;
+}
+
+.process-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.process-section h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.process-section p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.process-steps div {
+    background-color: #24272e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.process-steps div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #2d59eb;
+}
+
+.process-steps h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #38BDF8;
+}
+
+.process-steps p {
+    font-size: 15px;
+    color: #F8FAFC;
+}
+
+.start-project {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to top, #2d59eb 10%, #ffffff 90%);
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 1000px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.start-project h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.start-project p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #24272e;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #2d59eb;
+}
+
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 800px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #24272e;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #2d59eb;
+}
+
+.contact-info {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 1000px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.info-grid div {
+    background-color: #24272e;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.info-grid div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #2d59eb;
+}
+
+.info-grid i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #38BDF8;
+}
+
+.map-container iframe {
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
